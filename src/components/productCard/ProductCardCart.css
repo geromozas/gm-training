@@ -1,0 +1,43 @@
+.boxProductCard {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.subBoxProductCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgCart {
+  width: 100px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.boxImgTitlePrice {
+  margin-right: 100px;
+}
+
+.titleProductCart {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+@media (max-width: 550px) {
+  .boxImgTitlePrice {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .boxImgTitlePrice {
+    margin-right: 20px;
+  }
+  .imgCart {
+    display: none;
+  }
+  .boxProductCard {
+    height: 100px;
+  }
+}
