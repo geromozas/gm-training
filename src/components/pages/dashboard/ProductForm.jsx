@@ -17,7 +17,7 @@ const ProductForm = ({
   const [newProduct, setNewProduct] = useState({
     title: "",
     description: "",
-    description_small: "",
+    small_description: "",
     category: "",
     unit_price: "",
     image: "",
@@ -153,7 +153,7 @@ const ProductForm = ({
           label="Descripción corta"
           name="description_small"
           onChange={handleChange}
-          defaultValue={productSelected?.description_small}
+          defaultValue={productSelected?.small_description}
         />
         <TextField
           label="Categoria"
@@ -184,7 +184,7 @@ const ProductForm = ({
             rel="noopener noreferrer"
             style={{
               marginTop: 8,
-              color: "#d1a4ac",
+              color: "#DFD0B8",
             }}
           >
             Ver imagen actual

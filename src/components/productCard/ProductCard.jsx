@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 export default function ProductCard({
   image,
   title,
-  // description,
+  small_description,
   unit_price,
-  // category,
+  category,
   id,
 }) {
   return (
@@ -46,7 +46,7 @@ export default function ProductCard({
         >
           {title}
         </Typography>
-        {/* <Typography
+        <Typography
           variant="body2"
           sx={{ color: "text.secondary", height: 0 }}
           style={{
@@ -56,8 +56,8 @@ export default function ProductCard({
             marginBottom: 60,
           }}
         >
-          {description}
-        </Typography> */}
+          {small_description}
+        </Typography>
         <Typography
           gutterBottom
           variant="h5"

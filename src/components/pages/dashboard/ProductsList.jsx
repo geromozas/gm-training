@@ -103,7 +103,7 @@ const ProductsList = ({ products, setIsChange }) => {
                   {product.title}
                 </TableCell>
                 <TableCell component="th" scope="row" align="left">
-                  {product.description_small}
+                  {product.small_description}
                 </TableCell>
                 <TableCell
                   component="th"

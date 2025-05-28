@@ -63,7 +63,7 @@ const AboutMe = () => {
           </a>
           <a href="/shop">
             <Button color="secondary" variant="contained">
-              Ver cursos
+              Ver planes
             </Button>
           </a>
         </div>

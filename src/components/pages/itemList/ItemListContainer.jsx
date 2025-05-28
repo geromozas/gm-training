@@ -23,11 +23,11 @@ const ItemListContainer = () => {
     <div>
       <div className="boxTitleShop">
         <h1 className="titleShop" style={{ marginBottom: 5 }}>
-          Nuestros Servicios
+          Mis planes
         </h1>
         <p className="textInitialShop">
-          Descubre nuestra amplia gama de cursos, talleres y formaciones
-          diseñados para tu crecimiento personal y bienestar integral.
+          Descubre mi amplia variedad de planes y asesorias diseñados para tu
+          crecimiento fisico y mental.
         </p>
       </div>
       <div className="boxProducts">
@@ -37,7 +37,7 @@ const ItemListContainer = () => {
               key={product.id}
               image={product.image}
               title={product.title}
-              description={product.description_small}
+              small_description={product.small_description}
               unit_price={product.unit_price}
               id={product.id}
             />
