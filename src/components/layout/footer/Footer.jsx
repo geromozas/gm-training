@@ -3,8 +3,11 @@ import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { IconButton } from "@mui/material";
 import "./Footer.css";
+import { useContext } from "react";
+import { AuthContext } from "../../../context/AuthContext";
 
 const Footer = () => {
+  const { isLogged } = useContext(AuthContext);
   return (
     <div id="boxFooter">
       <div className="boxFooterUno">
@@ -31,13 +34,17 @@ const Footer = () => {
             <a href="/shop" style={{ color: "white" }}>
               <li>Tienda</li>
             </a>
-            <a href="/cart" style={{ color: "white" }}>
-              <li>Carrito</li>
-            </a>
-            <a href="" style={{ color: "white" }}>
-              <li>Mis compras</li>
-            </a>
           </ul>
+          {isLogged && (
+            <ul style={{ listStyleType: "none" }}>
+              <a href="/cart" style={{ color: "white" }}>
+                <li>Carrito</li>
+              </a>
+              <a href="" style={{ color: "white" }}>
+                <li>Mis compras</li>
+              </a>
+            </ul>
+          )}
         </div>
         <div style={{ color: "white" }} className="subBoxFooter">
           <h4 style={{ color: "#d9d2c4" }}>Contacto</h4>

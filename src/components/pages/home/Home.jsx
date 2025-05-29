@@ -56,7 +56,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/placeholder.jpg?alt=media&token=24295228-6119-4656-a7fb-d7d5cd681708"
+          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/placeholder.jpg?alt=media&token=524ebb7b-4c9b-4ae3-b50f-da1ebda2693f"
           alt="imagen presentación"
           className="imgHome"
         />
