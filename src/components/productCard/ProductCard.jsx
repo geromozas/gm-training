@@ -32,7 +32,7 @@ export default function ProductCard({
       }}
     >
       <CardMedia
-        sx={{ height: 200 }}
+        sx={{ height: 325 }}
         image={image}
         title="imagen del producto"
       />
@@ -46,7 +46,7 @@ export default function ProductCard({
         >
           {title}
         </Typography>
-        <Typography
+        {/* <Typography
           variant="body2"
           sx={{ color: "text.secondary", height: 0 }}
           style={{
@@ -57,12 +57,12 @@ export default function ProductCard({
           }}
         >
           {small_description}
-        </Typography>
+        </Typography> */}
         <Typography
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ height: 10, marginTop: 5 }}
+          sx={{ height: 5, marginTop: 5 }}
         >
           {Number(unit_price).toLocaleString("es-AR", {
             style: "currency",

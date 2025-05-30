@@ -13,7 +13,6 @@
 }
 
 .titleHome {
-  width: 700px;
   font-size: 50px;
   color: white;
 }
@@ -37,6 +36,8 @@
 .outStanding {
   justify-self: center;
   padding: 30px;
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 1450px) {
@@ -59,7 +60,7 @@
     width: 800px;
   }
   .boxTextHome {
-    margin-top: 0px;
+    margin-top: 40px;
     text-align: center;
     width: 650px;
   }

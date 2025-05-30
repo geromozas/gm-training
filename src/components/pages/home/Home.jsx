@@ -27,11 +27,14 @@ const Home = () => {
   return (
     <div id="boxHome">
       <div className="homeStart">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/placeholder.jpg?alt=media&token=524ebb7b-4c9b-4ae3-b50f-da1ebda2693f"
+          alt="imagen presentación"
+          className="imgHome"
+        />
         <div className="boxTextHome">
           <h1 className="titleHome">TRANSFORMA TU CUERPO</h1>
-          <h1 className="titleHome" style={{ marginLeft: 50 }}>
-            CAMBIA TU VIDA
-          </h1>
+          <h1 className="titleHome">CAMBIA TU VIDA</h1>
           <p className="textInitialHome">
             Soy Geronimo Mozas, entrenador personal. Ayudo a hombres y mujeres a
             ganar masa muscular o perder grasa con planes de entrenamiento
@@ -55,25 +58,22 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/placeholder.jpg?alt=media&token=524ebb7b-4c9b-4ae3-b50f-da1ebda2693f"
-          alt="imagen presentación"
-          className="imgHome"
-        />
       </div>
-      {/* <div
+
+      <div
         style={{
           marginTop: 50,
-          backgroundColor: "#F4D4CF",
+          // backgroundColor: "#DFD0B8",
           borderRadius: "10px",
         }}
       >
-        <h1 className="outStanding">Lo más destacado</h1>
+        <h1 className="outStanding">Programas mas vendidos</h1>
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "center",
             flexWrap: "wrap",
+            gap: 20,
           }}
         >
           {products.map((product) => {
@@ -89,7 +89,7 @@ const Home = () => {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

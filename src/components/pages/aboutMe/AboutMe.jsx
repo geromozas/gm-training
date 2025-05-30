@@ -80,6 +80,10 @@ const AboutMe = () => {
             alimentación flexible.
           </p>
           <p className="textAboutMe">
+            Creo que cada persona tiene el potencial de superar sus límites y
+            alcanzar sus objetivos.
+          </p>
+          <p className="textAboutMe">
             Ya sea que quieras ganar músculo, definir, mejorar tu rendimiento en
             tu deporte o simplemente sentirte mejor, estoy acá para ayudarte.
           </p>
