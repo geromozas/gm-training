@@ -164,7 +164,7 @@ function Navbar(props) {
             }}
           >
             <img
-              src="https://res.cloudinary.com/ddmvo0ert/image/upload/v1747777894/gm-training/logo-gm-fenrir_nlaa8d.png"
+              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/logo-gm-fenrir-2-sinFondo.png?alt=media&token=88ed0a48-3dec-4cc1-a1d5-65b81a97bfd1"
               alt=""
               style={{ width: 100, padding: "5px", borderRadius: "10px" }}
             />
