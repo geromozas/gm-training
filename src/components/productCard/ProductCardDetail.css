@@ -12,16 +12,17 @@
 
 .imgCardDetail {
   width: 600px;
-  height: 600px;
+  height: 700px;
   border-radius: 10px;
   margin-right: 50px;
 }
 
 .textDetailDescription {
- 
   margin-top: 20px;
+  width: 600px;
   /* columns: 2;
   column-gap: 2rem; */
+  /* width: 600px; */
 }
 
 .cardDetailPrice {

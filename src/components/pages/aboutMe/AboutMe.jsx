@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,55 +10,9 @@ const AboutMe = () => {
     <div>
       <div className="boxTitleAboutMe">
         <h1 className="titleAboutMe">Sobre Mí</h1>
-        <p className="textTitleAboutMe">
-          Conoce mi historia, formación y filosofía de trabajo.
-        </p>
+        <p className="subtitleAbout">Entrenador Personal • Coach Online</p>
       </div>
       <div className="boxAboutMe">
-        <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
-          loop={true}
-          className="imgAboutMeSwiper"
-        >
-          <SwiperSlide>
-            <img
-              className="imgAboutMe"
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/Remo-acostado.PNG?alt=media&token=a831f1a6-4965-4149-91ad-4865dc00806f"
-              alt="Geronimo 1"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="imgAboutMe"
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/back-squat.jpg?alt=media&token=c3ba9e2f-fb87-4c89-82f2-e65ea02a771d"
-              alt="Geronimo 2"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="imgAboutMe"
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/push-up.jpg?alt=media&token=3a17f768-0076-40ec-bc6f-95c41ca41cc8"
-              alt="Geronimo 3"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="imgAboutMe"
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/press-pecho.jpg?alt=media&token=754c8c3b-4440-43e7-ac06-771514db8eb4"
-              alt="Geronimo 4"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="imgAboutMe"
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/ext.caudriceps.jpg?alt=media&token=947e7969-4444-469a-a49c-6a1a1daa4a28"
-              alt="Geronimo 5"
-            />
-          </SwiperSlide>
-        </Swiper>
-
         <div className="boxTextAboutMe">
           <h2 className="titleMyPath">¿Quién soy?</h2>
           <p className="textAboutMe">
@@ -88,6 +41,10 @@ const AboutMe = () => {
             tu deporte o simplemente sentirte mejor, estoy acá para ayudarte.
           </p>
         </div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/about-me.png?alt=media&token=dbf5bb98-b649-4f6e-8fc6-6667ba6f5c0b"
+          alt=""
+        />
       </div>
       <div className="boxAboutMeLower">
         <h2 className="questionTransf">

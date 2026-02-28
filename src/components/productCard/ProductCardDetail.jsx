@@ -20,12 +20,13 @@ const ProductCardDetail = ({
         <div style={{ color: "white" }}>
           <h2>Descripción</h2>
           <p className="textDetailDescription">
-            {description.split("\n").map((linea, index) => (
-              <span key={index}>
-                {linea}
-                <br />
-              </span>
-            ))}
+            {description.split("\n").map((linea, index) =>
+              linea.trim() ? (
+                <p key={index} style={{ marginBottom: "10px" }}>
+                  {linea}
+                </p>
+              ) : null
+            )}
           </p>
           <h3 className="cardDetailPrice">
             {" "}

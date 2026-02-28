@@ -1,52 +1,101 @@
-#boxFooter {
-  background-color: #393e46;
-  padding: 25px;
+:root {
+  --bg-main: #0b0b0b;
+  --bg-secondary: #111111;
+  --accent: #9be564;
+  --accent-hover: #7ed957;
+  --text-main: #ffffff;
+  --text-secondary: #cfcfcf;
 }
 
-.boxFooterUno {
+/* contenedor */
+.footer {
+  background: linear-gradient(180deg, #111111, #0b0b0b);
+  padding: 60px 20px 30px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* grid */
+.footerContainer {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.imgFooter {
-  width: 50px;
-  border-radius: 5px;
-}
-
-.textFooter {
-  width: 300px;
-  color: #d9d2c4;
-}
-
-.boxCopyright {
+/* columnas */
+.footerCol {
   display: flex;
-  justify-content: center;
-}
-
-.subBoxFooter {
   flex-direction: column;
+  gap: 14px;
+  min-width: 200px;
 }
 
-@media (max-width: 750px) {
-  .boxFooterUno {
+.footerCol h4 {
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+/* texto */
+.footerCol p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+/* links */
+.footerCol a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+}
+
+.footerCol a:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* logo */
+.footerLogo {
+  width: 60px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 10px rgba(155, 229, 100, 0.25));
+}
+
+/* linea */
+.footerDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 40px auto 20px;
+  max-width: 1200px;
+}
+
+/* copyright */
+.copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .footerContainer {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .textFooter {
-    width: 500px;
-  }
-  .subBoxFooter {
-    margin-bottom: 20px;
-  }
-}
 
-@media (max-width: 530px) {
-  .textFooter {
-    width: 300px;
+  .footerCol {
+    align-items: center;
   }
-}
 
-@media (max-width: 350px) {
-  .textFooter {
-    width: 250px;
+  .footerCol p {
+    max-width: 350px;
   }
 }

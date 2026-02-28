@@ -1,4 +1,54 @@
-a {
+/* a {
   text-decoration: none;
   color: black;
+} */
+:root {
+  --bg-main: #0b0b0b;
+  --bg-secondary: #111111;
+  --accent: #9be564;
+  --accent-hover: #7ed957;
+  --text-main: #ffffff;
+  --text-secondary: #cfcfcf;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+/* botones menu desktop */
+.buttonMenu {
+  border-radius: 12px !important;
+  padding: 8px 18px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px;
+  transition: 0.25s !important;
+}
+
+/* botones llenos */
+.buttonMenu.MuiButton-contained {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: var(--text-main) !important;
+}
+
+.buttonMenu.MuiButton-contained:hover {
+  background: rgba(155, 229, 100, 0.08) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--accent) !important;
+  transform: translateY(-2px);
+}
+
+/* boton outline */
+.buttonMenu.MuiButton-outlined {
+  border: 1px solid var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.buttonMenu.MuiButton-outlined:hover {
+  background: var(--accent) !important;
+  color: black !important;
+  transform: translateY(-2px);
 }

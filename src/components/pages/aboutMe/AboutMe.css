@@ -1,178 +1,146 @@
+/* CONTENEDOR GENERAL */
 .boxTitleAboutMe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 20px;
+  justify-content: center;
+  margin: 40px auto 30px;
+  padding: 25px;
+  width: 90%;
+  max-width: 900px;
+  background: #121212;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1f1f1f;
 }
 
-.boxTextAboutMeSmallScreen {
-  display: none;
+.titleAboutMe {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #ffffff;
 }
 
+.textTitleAboutMe {
+  opacity: 0.8;
+  color: #bfbfbf;
+}
+
+.subtitleAbout {
+  opacity: 0.7;
+  font-size: 14px;
+  color: #9be564;
+}
+
+/* SECCION PRINCIPAL */
 .boxAboutMe {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
 }
 
+/* TEXTO */
 .boxTextAboutMe {
-  font-size: 20px;
-  margin-top: 20px;
-  margin-left: 60px;
-  color: white;
-}
-
-.imgAboutMeSwiper {
-  /* width: 100%;*/
-  width: 700px;
-  /* margin: auto; */
-}
-
-.imgAboutMe {
-  width: 700px;
-  height: 700px;
-  margin-top: 30px;
-  margin-right: 60px;
-  border-radius: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 600px;
 }
 
 .titleMyPath {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 32px;
+  color: #9be564;
 }
 
 .textAboutMe {
-  width: 600px;
   margin-bottom: 15px;
+  line-height: 1.6;
+  color: #bfbfbf;
 }
 
+/* IMAGEN */
+.imgAboutMe {
+  width: 420px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  object-fit: cover;
+  border: 1px solid #1f1f1f;
+}
+
+/* CTA FINAL */
 .boxAboutMeLower {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #dfd0b8;
-  padding: 20px;
-  border-radius: 10px;
+  margin: 60px auto;
+  background: #121212;
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1f1f1f;
 }
 
-@media (max-width: 1350px) {
-  .boxTextAboutMe {
-    margin-left: 0;
-  }
-  .imgAboutMe {
-    width: 400px;
-    height: 400px;
-    margin-top: 50px;
-  }
-  .imgAboutMeSwiper {
-    width: 400px;
-  }
+.questionTransf {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
-@media (max-width: 1150px) {
-  .textAboutMe {
-    width: 400px;
-  }
+.textQuestion {
+  opacity: 0.8;
+  color: #bfbfbf;
 }
 
-@media (max-width: 950px) {
+/* BOTONES */
+.boxAboutMeLower button {
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 8px 20px;
+  transition: 0.3s;
+  background-color: #9be564 !important;
+  color: #0b0b0b !important;
+}
+
+.boxAboutMeLower button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .boxAboutMe {
     flex-direction: column;
-    align-items: center;
-  }
-  .imgAboutMeSwiper {
-    width: 600px;
-  }
-  .imgAboutMe {
-    margin-right: 0;
-    width: 600px;
-  }
-  .textAboutMe {
-    width: 600px;
-  }
-  .boxTextAboutMe {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .questionTransf {
-    width: 400px;
     text-align: center;
   }
-  .textQuestion {
-    width: 400px;
-    text-align: center;
-  }
-}
 
-@media (max-width: 630px) {
-  .boxTitleAboutMe {
-    margin-bottom: 0;
-  }
-  .imgAboutMeSwiper {
-    width: 400px;
-  }
   .imgAboutMe {
-    width: 400px;
-  }
-  .textAboutMe {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .titleAboutMe {
-    font-size: 25px;
+    font-size: 30px;
   }
-  .textTitleAboutMe {
-    font-size: 15px;
-    width: 250px;
-    text-align: center;
-  }
-  .titleMyPath {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .textAboutMe {
-    font-size: 15px;
-    width: 350px;
-  }
-  .imgAboutMeSwiper {
-    width: 350px;
-  }
-  .imgAboutMe {
-    width: 350px;
-    height: 350px;
-  }
-  .questionTransf {
-    width: 300px;
-    font-size: 15px;
-  }
-  .textQuestion {
-    width: 280px;
-    font-size: 12px;
-  }
-}
 
-@media (max-width: 375px) {
-  .imgAboutMeSwiper {
-    width: 275px;
-  }
-  .imgAboutMe {
-    width: 275px;
-  }
   .titleMyPath {
-    text-align: center;
+    font-size: 24px;
   }
-  .textAboutMe {
-    width: 300px;
-  }
+
   .questionTransf {
-    width: 250px;
+    font-size: 22px;
+  }
+
+  .boxTextAboutMe {
+    font-size: 16px;
   }
 }

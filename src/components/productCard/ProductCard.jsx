@@ -22,6 +22,8 @@ export default function ProductCard({
           xs: 275,
           sm: 400,
         },
+        backgroundColor: "#393E46",
+        color: "black",
         marginBottom: 5,
         boxShadow: 3,
         transition: "transform 0.2s ease-in-out",
@@ -42,27 +44,29 @@ export default function ProductCard({
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ height: 50 }}
+          sx={{ color: "white", fontSize: 22 }}
         >
           {title}
         </Typography>
-        {/* <Typography
+
+        <Typography
           variant="body2"
-          sx={{ color: "text.secondary", height: 0 }}
+          sx={{ color: "white", height: 0 }}
           style={{
             display: "flex",
             alignItems: "start",
-            marginTop: 50,
-            marginBottom: 60,
+            marginTop: 25,
+            marginBottom: 50,
           }}
         >
           {small_description}
-        </Typography> */}
+        </Typography>
+
         <Typography
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ height: 5, marginTop: 5 }}
+          sx={{ height: 5, marginTop: 5, color: "white" }}
         >
           {Number(unit_price).toLocaleString("es-AR", {
             style: "currency",
@@ -72,7 +76,7 @@ export default function ProductCard({
       </CardContent>
       <CardActions sx={{ padding: 2 }}>
         <Link to={`/itemDetail/${id}`}>
-          <Button size="small" color="secondary" variant="contained">
+          <Button size="small" color="primary" variant="contained">
             Ver Detalle
           </Button>
         </Link>

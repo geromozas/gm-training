@@ -143,15 +143,19 @@ const ProductForm = ({
           onChange={handleChange}
           defaultValue={productSelected?.title}
         />
+
         <TextField
           label="Descripción"
           name="description"
+          multiline
+          rows={4}
           onChange={handleChange}
           defaultValue={productSelected?.description}
+          fullWidth
         />
         <TextField
           label="Descripción corta"
-          name="description_small"
+          name="small_description"
           onChange={handleChange}
           defaultValue={productSelected?.small_description}
         />
