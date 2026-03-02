@@ -1,97 +1,196 @@
+/* CONTENEDOR GENERAL */
 .titleCardDetail {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  color: white;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+  color: #ffffff;
 }
 
+/* LAYOUT PRINCIPAL */
 .boxCardDetail {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto 80px;
 }
 
+/* IMAGEN */
 .imgCardDetail {
-  width: 600px;
-  height: 700px;
-  border-radius: 10px;
-  margin-right: 50px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1f1f1f;
 }
 
+/* BLOQUE DERECHO */
+.boxDetailInfo {
+  max-width: 600px;
+  color: white;
+}
+
+/* DESCRIPCION */
 .textDetailDescription {
   margin-top: 20px;
-  width: 600px;
-  /* columns: 2;
-  column-gap: 2rem; */
-  /* width: 600px; */
 }
 
+.textDetailDescription p {
+  color: #bfbfbf;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* PRECIO */
 .cardDetailPrice {
-  margin-top: 30px;
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #9be564;
 }
 
+/* BOTONES */
 .boxButtonsDetail {
   margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 1400px) {
-  .textDetailDescription {
-    width: 700px;
-  }
+.boxButtonsDetail button:first-child {
+  background-color: #9be564 !important;
+  color: #0b0b0b !important;
+  font-weight: bold;
+  border-radius: 12px;
 }
 
-@media (max-width: 1150px) {
-  .imgCardDetail {
-    width: 500px;
-  }
-  .textDetailDescription {
-    width: 400px;
-    columns: 1;
-  }
+.boxButtonsDetail button:first-child:hover {
+  background-color: #84d94a !important;
 }
 
-@media (max-width: 950px) {
-  .imgCardDetail {
-    width: 400px;
-  }
-  .textDetailDescription {
-    width: 350px;
-  }
+.boxButtonsDetail button:last-child {
+  border-color: #9be564 !important;
+  color: #9be564 !important;
+  border-radius: 12px;
 }
 
-@media (max-width: 800px) {
+.boxButtonsDetail button:last-child:hover {
+  background-color: #9be56415 !important;
+}
+
+/* LINK WHATSAPP */
+.contactLink {
+  margin-top: 25px;
+  color: #9be564;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
   .boxCardDetail {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
+
   .imgCardDetail {
-    width: 450px;
-    margin-bottom: 10px;
-    margin-right: 0;
+    width: 100%;
+    max-width: 450px;
   }
-  .textDetailDescription {
-    width: 450px;
+
+  .boxDetailInfo {
+    max-width: 500px;
+  }
+
+  .boxButtonsDetail {
+    justify-content: center;
   }
 }
 
-@media (max-width: 475px) {
-  .imgCardDetail {
-    width: 350px;
-    height: 300px;
-  }
-  .textDetailDescription {
-    width: 350px;
-  }
-}
-
-@media (max-width: 375px) {
-  .imgCardDetail {
-    width: 300px;
-  }
+@media (max-width: 500px) {
   .titleCardDetail {
-    font-size: 25px;
+    font-size: 28px;
   }
-  .textDetailDescription {
-    width: 300px;
+
+  .cardDetailPrice {
+    font-size: 26px;
+  }
+}
+
+/* TITULOS DE SECCION */
+.sectionTitle {
+  margin-top: 30px;
+  color: #9be564;
+  font-size: 22px;
+}
+
+/* BENEFICIOS */
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.benefitsList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #bfbfbf;
+  font-size: 15px;
+}
+
+.checkIcon {
+  color: #9be564;
+  margin-right: 10px;
+  font-size: 20px !important;
+}
+
+/* CAJA QUE INCLUYE */
+.includesBox {
+  background: #121212;
+  border: 1px solid #1f1f1f;
+  border-left: 4px solid #9be564;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.includesBox h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.includesBox ul {
+  padding-left: 18px;
+  color: #bfbfbf;
+}
+
+.includesBox li {
+  margin-bottom: 8px;
+}
+
+/* ANIMACION SUAVE */
+.fadeInPage {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

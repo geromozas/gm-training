@@ -11,62 +11,79 @@ export default function ProductCard({
   title,
   small_description,
   unit_price,
-  category,
   id,
 }) {
   return (
     <Card
-      className="productCard"
       sx={{
-        width: {
-          xs: 275,
-          sm: 400,
-        },
-        backgroundColor: "#393E46",
-        color: "black",
-        marginBottom: 5,
-        boxShadow: 3,
-        transition: "transform 0.2s ease-in-out",
+        width: { xs: 280, sm: 380 },
+        backgroundColor: "#121212",
+        color: "#fff",
+        borderRadius: "18px",
+        border: "1px solid #1f1f1f",
+        marginBottom: 6,
+        boxShadow: "0 10px 30px rgba(0,0,0,0.6)",
+        transition: "all 0.3s ease",
         cursor: "pointer",
+        overflow: "hidden",
         "&:hover": {
-          transform: "scale(1.05)",
+          transform: "translateY(-8px)",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.8)",
+          border: "1px solid #9BE564",
         },
       }}
     >
       <CardMedia
-        sx={{ height: 325 }}
+        component="img"
+        height="280"
         image={image}
-        title="imagen del producto"
+        alt={title}
+        sx={{
+          objectFit: "cover",
+          filter: "brightness(0.9)",
+        }}
       />
 
-      <CardContent>
+      <CardContent sx={{ padding: 3 }}>
         <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          sx={{ color: "white", fontSize: 22 }}
+          variant="h6"
+          sx={{
+            fontWeight: 600,
+            marginBottom: 1,
+          }}
         >
           {title}
         </Typography>
 
         <Typography
           variant="body2"
-          sx={{ color: "white", height: 0 }}
-          style={{
-            display: "flex",
-            alignItems: "start",
-            marginTop: 25,
-            marginBottom: 50,
+          sx={{
+            color: "#BFBFBF",
+            marginBottom: 3,
+            minHeight: "60px",
+            lineHeight: 1.5,
           }}
         >
           {small_description}
         </Typography>
 
         <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          sx={{ height: 5, marginTop: 5, color: "white" }}
+          sx={{
+            fontSize: 12,
+            color: "#9BE564",
+            letterSpacing: 1,
+            marginBottom: 1,
+          }}
+        >
+          PLAN ONLINE
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "#9BE564",
+            fontWeight: 700,
+            fontSize: 20,
+          }}
         >
           {Number(unit_price).toLocaleString("es-AR", {
             style: "currency",
@@ -74,9 +91,22 @@ export default function ProductCard({
           })}
         </Typography>
       </CardContent>
-      <CardActions sx={{ padding: 2 }}>
-        <Link to={`/itemDetail/${id}`}>
-          <Button size="small" color="primary" variant="contained">
+
+      <CardActions sx={{ padding: 3, paddingTop: 0 }}>
+        <Link to={`/itemDetail/${id}`} style={{ width: "100%" }}>
+          <Button
+            fullWidth
+            variant="contained"
+            sx={{
+              backgroundColor: "#9BE564",
+              color: "#0B0B0B",
+              fontWeight: "bold",
+              borderRadius: "12px",
+              "&:hover": {
+                backgroundColor: "#84d94a",
+              },
+            }}
+          >
             Ver Detalle
           </Button>
         </Link>

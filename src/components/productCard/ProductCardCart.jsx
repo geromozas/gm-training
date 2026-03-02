@@ -7,7 +7,6 @@ const ProductCardCart = ({ title, unit_price, image, id }) => {
   const { deleteById } = useContext(CartContext);
   return (
     <div className="boxProductCard">
-      <hr style={{ marginBottom: 10, marginTop: 10 }} />
       <div className="subBoxProductCard">
         <img className="imgCart" src={image} alt="" />
         <div className="boxImgTitlePrice">
@@ -20,11 +19,29 @@ const ProductCardCart = ({ title, unit_price, image, id }) => {
           </p>
         </div>
         <div>
-          <Button
+          {/* <Button
             size="small"
             variant="contained"
             style={{ height: 30 }}
             onClick={() => deleteById(id)}
+          >
+            Eliminar
+          </Button> */}
+          <Button
+            size="small"
+            variant="contained"
+            onClick={() => deleteById(id)}
+            sx={{
+              height: 35,
+              backgroundColor: "#9BE564",
+              color: "#0F1115",
+              fontWeight: 600,
+              borderRadius: "10px",
+              textTransform: "none",
+              "&:hover": {
+                backgroundColor: "#7ED957",
+              },
+            }}
           >
             Eliminar
           </Button>

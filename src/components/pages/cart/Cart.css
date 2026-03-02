@@ -1,28 +1,116 @@
+/* Fondo general más premium */
+.cartPage {
+  margin-top: 40px;
+  color: white;
+}
+
+/* Título */
+
 .boxTitleCart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   text-align: center;
 }
+
+.titleCart {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.textTitleCart {
+  font-size: 16px;
+  color: #a0a3ad;
+}
+
+/* Carrito vacío */
 
 .emptyCart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
+
+.textEmptyCart {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+/* Layout principal */
 
 .boxCartFull {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 60px;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 
+.boxProductsCart {
+  flex: 1;
+  max-width: 700px;
+}
+
+.cartSectionTitle {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.cartSectionTitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #9be564;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+/* Botones izquierda */
+
+.boxButtonsCart {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Resumen del pedido */
+
 .boxTotalOrder {
-  height: 150px;
+  background: #171a21;
+  border: 1px solid rgba(155, 229, 100, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.boxTotalOrder h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.boxTotalOrder h3 {
+  font-size: 16px;
+  color: #a0a3ad;
+  margin-bottom: 5px;
+}
+
+.totalPrice {
+  font-size: 28px;
+  color: #9be564;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .boxPay {
@@ -31,44 +119,37 @@
   align-items: center;
 }
 
-.boxButtonsCart {
-  display: flex;
+.boxPay p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #a0a3ad;
 }
 
-.buttonEmptyCart {
-  margin-top: 30px;
-  margin-left: 30px;
-}
+/* Responsive */
 
 @media (max-width: 900px) {
   .boxCartFull {
     flex-direction: column;
     align-items: center;
   }
-  .boxTotalOrder {
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-}
 
-@media (max-width: 600px) {
-  .textEmptyCart {
-    font-size: 25px;
+  .boxTotalOrder {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 450px) {
   .titleCart {
-    font-size: 25px;
+    font-size: 26px;
   }
+
   .textTitleCart {
-    font-size: 15px;
+    font-size: 14px;
   }
+
   .boxButtonsCart {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-  }
-  .buttonEmptyCart {
-    margin-left: 0px;
   }
 }
