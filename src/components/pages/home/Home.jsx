@@ -88,7 +88,7 @@ const Home = () => {
         </div>
 
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/placeholder.jpg?alt=media&token=524ebb7b-4c9b-4ae3-b50f-da1ebda2693f"
+          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/pullups.jpeg?alt=media&token=c94be274-eca1-4bc5-909a-ac1f66aa8abf"
           alt="entrenamiento"
           className="heroImg"
         />

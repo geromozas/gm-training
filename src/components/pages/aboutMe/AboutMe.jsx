@@ -42,8 +42,9 @@ const AboutMe = () => {
           </p>
         </div>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/about-me.png?alt=media&token=dbf5bb98-b649-4f6e-8fc6-6667ba6f5c0b"
+          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/quien-soy.jpeg?alt=media&token=2d88a2c3-ceca-4f47-b78e-e0d01fd89c48"
           alt=""
+          className="imgAboutMe"
         />
       </div>
       <div className="boxAboutMeLower">
