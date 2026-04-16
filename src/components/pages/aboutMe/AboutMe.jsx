@@ -61,7 +61,7 @@ const AboutMe = () => {
             gap: 10,
           }}
         >
-          <a href="https://wa.me/5493413485580?text=Hola%2C%20te%20contacto%20desde%20tu%20web...">
+          <a href="https://wa.me/5493416041873?text=Hola%2C%20te%20contacto%20desde%20tu%20web...">
             <Button color="secondary" variant="contained" size="small">
               Contactar
             </Button>
