@@ -506,7 +506,7 @@ function Navbar(props) {
           {/* LOGO */}
           <Link to="/">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/logo-gm-fenrir.png?alt=media&token=46de1bed-6e01-42be-a1a2-b06ebe940dba"
+              src="https://res.cloudinary.com/ddmvo0ert/image/upload/v1747777894/gm-training/logo-gm-fenrir_nlaa8d.png"
               alt="logo"
               style={{
                 width: 100,

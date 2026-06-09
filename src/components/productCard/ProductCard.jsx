@@ -49,13 +49,14 @@ export default function ProductCard({
           variant="h6"
           sx={{
             fontWeight: 600,
-            marginBottom: 1,
+            marginBottom: 5,
+            minHeight: "64px",
           }}
         >
           {title}
         </Typography>
 
-        <Typography
+        {/* <Typography
           variant="body2"
           sx={{
             color: "#BFBFBF",
@@ -65,7 +66,7 @@ export default function ProductCard({
           }}
         >
           {small_description}
-        </Typography>
+        </Typography> */}
 
         <Typography
           sx={{

@@ -88,7 +88,7 @@ const Home = () => {
         </div>
 
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/pullups.jpeg?alt=media&token=c94be274-eca1-4bc5-909a-ac1f66aa8abf"
+          src="https://res.cloudinary.com/ddmvo0ert/image/upload/v1781036327/gm-training/pullups_rel4hk.jpg"
           alt="entrenamiento"
           className="heroImg"
         />

@@ -121,7 +121,7 @@ const ProductCardDetail = ({
           </div>
 
           {/* BENEFICIOS */}
-          <h2 className="sectionTitle">Beneficios</h2>
+          {/* <h2 className="sectionTitle">Beneficios</h2>
           <ul className="benefitsList">
             {beneficios.map((item, index) => (
               <li key={index}>
@@ -129,17 +129,17 @@ const ProductCardDetail = ({
                 {item}
               </li>
             ))}
-          </ul>
+          </ul> */}
 
           {/* QUE INCLUYE */}
-          <div className="includesBox">
+          {/* <div className="includesBox">
             <h3>¿Qué incluye?</h3>
             <ul>
               {incluye.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           <h3 className="cardDetailPrice">
             {Number(unit_price).toLocaleString("es-AR", {

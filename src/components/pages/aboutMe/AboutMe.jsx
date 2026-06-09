@@ -42,7 +42,7 @@ const AboutMe = () => {
           </p>
         </div>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/gm-training-96e51.firebasestorage.app/o/quien-soy.jpeg?alt=media&token=2d88a2c3-ceca-4f47-b78e-e0d01fd89c48"
+          src="https://res.cloudinary.com/ddmvo0ert/image/upload/v1781036298/gm-training/quien-soy_xjicxz.jpg"
           alt=""
           className="imgAboutMe"
         />
