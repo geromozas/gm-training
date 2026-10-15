@@ -49,7 +49,7 @@ export default function ProductCard({
           variant="h6"
           sx={{
             fontWeight: 600,
-            marginBottom: 5,
+            marginBottom: 0,
             minHeight: "64px",
           }}
         >
