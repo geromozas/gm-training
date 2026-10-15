@@ -23,7 +23,7 @@ const ItemListContainer = () => {
     <div>
       <div className="boxTitleShop">
         <h1 className="titleShop" style={{ marginBottom: 5 }}>
-          Mis planes
+          Planes y Asesorías
         </h1>
         <p className="textInitialShop">
           Descubre mi amplia variedad de planes y asesorias diseñados para tu

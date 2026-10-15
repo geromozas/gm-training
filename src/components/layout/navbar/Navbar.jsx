@@ -549,7 +549,7 @@ function Navbar(props) {
                 className="buttonMenu"
                 sx={isActive("/shop") ? activeStyle : {}}
               >
-                Tienda
+                Planes y Asesorías
               </Button>
             </Link>
 
@@ -564,7 +564,7 @@ function Navbar(props) {
               </Link>
             )}
 
-            {isLogged ? (
+            {/* {isLogged ? (
               <>
                 <Link to="/cart">
                   <Button
@@ -602,7 +602,7 @@ function Navbar(props) {
                   Iniciar sesión
                 </Button>
               </Link>
-            )}
+            )} */}
           </Box>
         </Toolbar>
       </AppBar>

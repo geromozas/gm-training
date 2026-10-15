@@ -1,78 +1,3 @@
-// import { Button, useMediaQuery, useTheme } from "@mui/material";
-// import "./ProductCardDetail.css";
-
-// const ProductCardDetail = ({
-//   title,
-//   description,
-//   unit_price,
-//   image,
-//   addToCart,
-//   buyCourse,
-// }) => {
-//   const theme = useTheme();
-//   const isLargeScreen = useMediaQuery(theme.breakpoints.up("md"));
-
-//   return (
-//     <div>
-//       <h1 className="titleCardDetail">{title}</h1>
-
-//       <div className="boxCardDetail">
-//         {/* Imagen */}
-//         <img className="imgCardDetail" src={image} alt={title} />
-
-//         {/* Información derecha */}
-//         <div className="boxDetailInfo">
-//           <h2 style={{ color: "#ffffff" }}>Descripción</h2>
-
-//           {/* IMPORTANTE: cambiamos <p> por <div> */}
-//           <div className="textDetailDescription">
-//             {description
-//               .split("\n")
-//               .map((linea, index) =>
-//                 linea.trim() ? <p key={index}>{linea}</p> : null,
-//               )}
-//           </div>
-
-//           {/* Precio */}
-//           <h3 className="cardDetailPrice">
-//             {Number(unit_price).toLocaleString("es-AR", {
-//               style: "currency",
-//               currency: "ARS",
-//             })}
-//           </h3>
-
-//           {/* Botones */}
-//           <div className="boxButtonsDetail">
-//             <Button
-//               size={isLargeScreen ? "large" : "medium"}
-//               variant="contained"
-//               onClick={buyCourse}
-//             >
-//               Comprar
-//             </Button>
-
-//             <Button variant="outlined" onClick={addToCart}>
-//               Añadir al carrito
-//             </Button>
-//           </div>
-
-//           {/* WhatsApp */}
-//           <p style={{ marginTop: 20 }}>
-//             ¿Tenés dudas?{" "}
-//             <a
-//               className="contactLink"
-//               href={`https://wa.me/5493416041873?text=Hola%2C%20estoy%20interesado/a%20en%20este%20producto%20${title}`}
-//             >
-//               Contactame
-//             </a>
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProductCardDetail;
 import { Button, useMediaQuery, useTheme } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import "./ProductCardDetail.css";
@@ -149,17 +74,23 @@ const ProductCardDetail = ({
           </h3>
 
           <div className="boxButtonsDetail">
-            <Button
-              size={isLargeScreen ? "large" : "medium"}
-              variant="contained"
-              onClick={buyCourse}
+            <a
+              href={`https://wa.me/5493416041873?text=${encodeURIComponent(
+                `Hola Gero! Vi la ${title} en tu página y quiero adquirirlo. ¿Cómo hacemos?`,
+              )}`}
             >
-              Comprar
-            </Button>
+              <Button
+                size={isLargeScreen ? "large" : "medium"}
+                variant="contained"
+                // onClick={buyCourse}
+              >
+                QUIERO
+              </Button>
+            </a>
 
-            <Button variant="outlined" onClick={addToCart}>
-              Añadir al carrito
-            </Button>
+            {/* <Button variant="outlined" onClick={addToCart}>
+              Quiero
+            </Button> */}
           </div>
 
           <p style={{ marginTop: 20 }}>

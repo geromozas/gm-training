@@ -67,15 +67,14 @@ const Home = () => {
           <h2>Lográ resultados reales</h2>
 
           <p>
-            Soy Gerónimo Mozas, entrenador personal. Te ayudo a ganar músculo o
-            perder grasa con planes simples, sostenibles y enfocados en
-            resultados.
+            Soy Gerónimo Mozas, entrenador personal. Te ayudo a lograr tu mejor
+            versión con planes simples, sostenibles y enfocados en resultados.
           </p>
 
           <div className="heroButtons">
             <Link to="/shop">
               <Button variant="contained" size="large">
-                Ver planes
+                Mis servicios
               </Button>
             </Link>
 

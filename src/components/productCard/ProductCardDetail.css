@@ -70,11 +70,11 @@
   background-color: #84d94a !important;
 }
 
-.boxButtonsDetail button:last-child {
+/* .boxButtonsDetail button:last-child {
   border-color: #9be564 !important;
   color: #9be564 !important;
   border-radius: 12px;
-}
+} */
 
 .boxButtonsDetail button:last-child:hover {
   background-color: #9be56415 !important;

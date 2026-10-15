@@ -30,14 +30,14 @@ const Footer = () => {
           <h4>Navegación</h4>
           <a href="/">Inicio</a>
           <a href="/about-me">Sobre mí</a>
-          <a href="/shop">Planes</a>
+          <a href="/shop">Planes y Asesorías</a>
 
-          {isLogged && (
+          {/* {isLogged && (
             <>
               <a href="/cart">Carrito</a>
               <a href="/user-orders">Mis compras</a>
             </>
-          )}
+          )} */}
         </div>
 
         {/* contacto */}
@@ -52,8 +52,8 @@ const Footer = () => {
             <WhatsAppIcon /> +54 9 341 604-1873
           </a>
 
-          <a href="https://www.instagram.com/gero_training/">
-            <InstagramIcon /> @gero_training
+          <a href="https://www.instagram.com/geromozas.fit/">
+            <InstagramIcon /> @geromzoas.fit
           </a>
         </div>
       </div>
