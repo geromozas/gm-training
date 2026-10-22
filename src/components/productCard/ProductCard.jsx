@@ -4,6 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
+import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
 export default function ProductCard({
@@ -11,6 +13,8 @@ export default function ProductCard({
   title,
   small_description,
   unit_price,
+  category,
+  frecuenciaPago,
   id,
 }) {
   return (
@@ -44,7 +48,7 @@ export default function ProductCard({
         }}
       />
 
-      <CardContent sx={{ padding: 3 }}>
+      {/* <CardContent sx={{ padding: 3 }}>
         <Typography
           variant="h6"
           sx={{
@@ -56,28 +60,22 @@ export default function ProductCard({
           {title}
         </Typography>
 
-        {/* <Typography
-          variant="body2"
-          sx={{
-            color: "#BFBFBF",
-            marginBottom: 3,
-            minHeight: "60px",
-            lineHeight: 1.5,
-          }}
-        >
-          {small_description}
-        </Typography> */}
-
-        <Typography
-          sx={{
-            fontSize: 12,
-            color: "#9BE564",
-            letterSpacing: 1,
-            marginBottom: 1,
-          }}
-        >
-          PLAN ONLINE
-        </Typography>
+      
+        {category && (
+          <Chip
+            label={category}
+            size="small"
+            sx={{
+              backgroundColor: "rgba(155, 229, 100, 0.15)",
+              color: "#9BE564",
+              border: "1px solid #9BE564",
+              fontWeight: 600,
+              fontSize: 12,
+              letterSpacing: 0.5,
+              marginBottom: 1.5,
+            }}
+          />
+        )}
         <Typography
           variant="h6"
           sx={{
@@ -91,6 +89,67 @@ export default function ProductCard({
             currency: "ARS",
           })}
         </Typography>
+        <Typography
+          sx={{
+            fontSize: 12,
+            color: "#9BE564",
+            letterSpacing: 1,
+            marginBottom: 1,
+          }}
+        >
+          {frecuenciaPago}
+        </Typography>
+      </CardContent> */}
+
+      <CardContent sx={{ padding: 3 }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: 600,
+            marginBottom: 0,
+            minHeight: "64px",
+          }}
+        >
+          {title}
+        </Typography>
+
+        {category && (
+          <Chip
+            label={category}
+            size="small"
+            sx={{
+              backgroundColor: "rgba(155, 229, 100, 0.15)",
+              color: "#9BE564",
+              border: "1px solid #9BE564",
+              fontWeight: 600,
+              fontSize: 12,
+              letterSpacing: 0.5,
+              marginBottom: 1.5,
+            }}
+          />
+        )}
+
+        <Box sx={{ display: "flex", alignItems: "baseline", gap: 1 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "#9BE564",
+              fontWeight: 700,
+              fontSize: 20,
+            }}
+          >
+            {Number(unit_price).toLocaleString("es-AR", {
+              style: "currency",
+              currency: "ARS",
+            })}
+          </Typography>
+
+          {frecuenciaPago && (
+            <Typography sx={{ fontSize: 14, color: "#9BE564" }}>
+              {frecuenciaPago}
+            </Typography>
+          )}
+        </Box>
       </CardContent>
 
       <CardActions sx={{ padding: 3, paddingTop: 0 }}>

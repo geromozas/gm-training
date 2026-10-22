@@ -39,6 +39,8 @@ const ItemListContainer = () => {
               title={product.title}
               small_description={product.small_description}
               unit_price={product.unit_price}
+              category={product.category}
+              frecuenciaPago={product.frecuenciaPago}
               id={product.id}
             />
           );
