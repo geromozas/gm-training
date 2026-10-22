@@ -19,13 +19,13 @@ export const menuItems = [
   {
     id: "products",
     path: "/shop",
-    title: "Tienda",
+    title: "Planes y Asesorías",
     Icon: FitnessCenterIcon,
   },
-  {
-    id: "cart",
-    path: "/cart",
-    title: "Carrito",
-    Icon: ShoppingCartCheckoutIcon,
-  },
+  // {
+  //   id: "cart",
+  //   path: "/cart",
+  //   title: "Carrito",
+  //   Icon: ShoppingCartCheckoutIcon,
+  // },
 ];

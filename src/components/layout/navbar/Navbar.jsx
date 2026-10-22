@@ -412,7 +412,7 @@ function Navbar(props) {
           </Link>
         ))}
 
-        {user.rol === rolAdmin && (
+        {/* {user.rol === rolAdmin && (
           <Link to={"/all-users-orders"}>
             <ListItem disablePadding>
               <ListItemButton>
@@ -480,7 +480,7 @@ function Navbar(props) {
               </ListItemButton>
             </ListItem>
           </Link>
-        )}
+        )} */}
       </List>
     </Box>
   );
